@@ -1,0 +1,73 @@
+services:
+  api:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "${PORT}:${PORT}"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    hostname: api
+    networks:
+      - leaky-net
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - api
+    networks:
+      - leaky-net
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=secret
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    depends_on:
+      - prometheus
+    networks:
+      - leaky-net
+
+networks:
+  leaky-net:
+
+volumes:
+  grafana-storage:
+# version: "3.9"
+
+# services:
+#   api:
+#     build: .
+#     container_name: api
+#     environment:
+#       PORT: 8082
+#       BUCKET_CAPACITY: 10
+#       LEAK_RATE: 2
+#     ports:
+#       - "8082:8082"
+#     networks:
+#       - leaky-net
+
+#   prometheus:
+#     image: prom/prometheus:latest
+#     container_name: prometheus
+#     ports:
+#       - "9090:9090"
+#     volumes:
+#       - ./prometheus.yml:/etc/prometheus/prometheus.yml
+#     depends_on:
+#       - api
+#     networks:
+#       - leaky-net
+
+# networks:
+#   leaky-net:
