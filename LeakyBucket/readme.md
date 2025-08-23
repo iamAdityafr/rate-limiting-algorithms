@@ -17,7 +17,7 @@ This ensures a smooth output rate (no bursts) while still absorbing traffic spik
 
 ---
 ### Diagram
-![Leaky Bucket Diagram](./images/LeakyBucket.png)
+![Leaky Bucket Diagram](../images/LeakyBucket.png)
 
 ---
 ### Pros and Cons
