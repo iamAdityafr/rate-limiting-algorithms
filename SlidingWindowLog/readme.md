@@ -13,7 +13,7 @@ The **sliding window log** algorithm is a precise rate limiting technique that s
 
 ---
 ### Diagram
-![Sliding Window Log Diagram](./images/SlidingWindowLog.png)
+![Sliding Window Log Diagram](../images/SlidingWindowLog.png)
 
 ---
 
