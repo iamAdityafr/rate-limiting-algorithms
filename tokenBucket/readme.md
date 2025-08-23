@@ -15,7 +15,7 @@ The **token bucket algorithm** is a widely used rate limiting algorithm and easy
 
 ### Diagram
 
-![Token Bucket Diagram](./images/tokenBucket.png)
+![Token Bucket Diagram](../images/tokenBucket.png)
 
 ---
 
