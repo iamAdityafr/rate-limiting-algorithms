@@ -1,7 +1,7 @@
 # Rate Limiting Algorithms
 
 > Go • Prometheus • Grafana 
-
+ 
 This repo contains **five independent reference implementations** of the most common rate-limiting algorithms.
 
 ## Algorithms
