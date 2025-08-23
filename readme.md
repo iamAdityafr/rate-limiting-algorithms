@@ -6,11 +6,11 @@ This repo contains **five independent reference implementations** of the most co
 
 ## Algorithms
 
-- [Fixed Window Counter](https://github.com/iamAdityafr/FixedWindowCounter)
-- [Sliding Window Counter](https://github.com/iamAdityafr/SlidingWindowCounter)
-- [Sliding Window Log](https://github.com/iamAdityafr/SlidingWindowLog)
-- [Token Bucket](https://github.com/iamAdityafr/TokenBucket)
-- [Leaky Bucket](https://github.com/iamAdityafr/LeakyBucket)
+- [Fixed Window Counter](https://github.com/iamAdityafr/rate-limiting-algorithms/tree/main/FixedWindowCounter)
+- [Sliding Window Counter](https://github.com/iamAdityafr/rate-limiting-algorithms/tree/main/SlidingWindowCounter)
+- [Sliding Window Log](https://github.com/iamAdityafr/rate-limiting-algorithms/tree/main/SlidingWindowLog)
+- [Token Bucket](https://github.com/iamAdityafr/rate-limiting-algorithms/tree/main/TokenBucket)
+- [Leaky Bucket](https://github.com/iamAdityafr/rate-limiting-algorithms/tree/main/LeakyBucket)
 
 **Click on an algorithm for details**
 
