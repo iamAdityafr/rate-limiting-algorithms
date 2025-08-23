@@ -22,7 +22,7 @@ The **sliding-window counter algorithm** is a hybrid approach that combines the 
 
 ### Diagram
 
-![Sliding Window Counter Diagram](./images/SlidingWindowCounter.png)
+![Sliding Window Counter Diagram](../images/SlidingWindowCounter.png)
 
 
 ---
