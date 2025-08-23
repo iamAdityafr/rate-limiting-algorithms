@@ -12,7 +12,7 @@ The fixed-window counter is one of the simplest rate limiting strategies.
 
 ### Diagram
 
-![Fixed Window Counter Diagram](./images/FixedWindowCounter.png)
+![Fixed Window Counter Diagram](../images/FixedWindowCounter.png)
 
 
 
